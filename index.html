@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Don Matheus</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/logo/trasnparent.png" type="image/x-icon">
+</head>
+<body>
+    <section class="left-side">
+        <a href="index.html" class="logo"><img src="assets/logo/trasnparent.png" draggable="false"></a>
+        <nav>
+            <a href="agendar.html" id="link-agendar">Agendar</a>
+            <a href="index.html" id="link-planos">Planos</a>
+            <a href="index.html" id="link-sobre">Sobre</a>
+            <a href="login.html" id="link-login">Entrar</a>
+        </nav>
+    </section>
+
+    <section class="right-side">
+        <main style="min-height: 40%;">
+            <div class="card" id="agendar" style="display: flex; flex-direction: column;">
+                <h3>Oh não 😢</h3>
+                <p>
+                    Está um pouco vazio por aqui...
+                    Mas vem cortar o cabelin com nois pae 🤙😜
+                </p>
+                <button class="btn" id="redir">Marcar um horário</button> <!-- Remover no futuro -->
+            </div>
+        </main>
+    
+        <footer>
+            <p>© <span id="ano">2025</span> • Studio Don Matheus</p>
+        </footer>
+    </section>
+    <script src="scripts/script.js"></script>
+
+    <script> // Remover isso no futuro
+        const btn = document.getElementById("redir")
+        btn.addEventListener("click", (e)=>{
+            window.location.href = "agendar.html"
+        })
+    </script>
+</body>
+</html>

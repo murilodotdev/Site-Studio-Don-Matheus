@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Don Matheus</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="../assets/logo/trasnparent.png" type="image/x-icon">
+</head>
+<body>
+    <section class="left-side">
+        <a href="index.html" class="logo"><img src="assets/logo/trasnparent.png" draggable="false"></a>
+        <nav>
+            <a href="agendar.html" id="link-agendar">Agendar</a>
+            <a href="index.html" id="link-planos">Planos</a>
+            <a href="index.html" id="link-sobre">Sobre</a>
+            <a href="login.html" id="link-login">Entrar</a>
+        </nav>
+    </section>
+
+    <section class="right-side">
+        <main>
+            <div class="card" id="login">
+                <h3 style="justify-self: center;">Entrar</h3>
+                <form>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" placeholder="Insira seu nome aqui" type="text" required>
+                    
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Insira sua senha aqui" required>
+    
+                    <button class="btn" type="submit">ENTRAR</button>
+                </form>
+            </div>
+        </main>
+    
+        <footer>
+            <p>© <span id="ano">2025</span> • Studio Don Matheus </p>
+        </footer>
+    </section>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
