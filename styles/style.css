@@ -70,8 +70,10 @@ main {
 }
 main p, h3, label {color: var(--gold-mid);}
 
-.card h3 {font-size: 1.5rem;}
 .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     background:linear-gradient(0deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
     border:1px solid rgba(212,175,55,0.12);
     padding: 32px;
@@ -81,6 +83,10 @@ main p, h3, label {color: var(--gold-mid);}
     min-width: 350px;
     max-width: 600px;
     margin: 0 auto;
+}
+.card-title {
+    margin: 0 auto;
+    font-size: 1.5rem;
 }
 
 label {
