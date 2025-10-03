@@ -1,10 +1,7 @@
 const card = document.getElementsByClassName("card")[0]
 const cardTitle = document.getElementsByClassName("card-title")[0]
-    
-const loginForm = document.getElementById("login")
-loginForm.addEventListener("submit", (e)=>{
-    e.preventDefault()
 
+function siteEmConstrucao() {
     cardTitle.innerText = "Site ainda em construção 🚧👷"
 
     let msg = document.createElement("p")
@@ -21,4 +18,21 @@ loginForm.addEventListener("submit", (e)=>{
     loginForm.remove()
     card.appendChild(msg)
     card.appendChild(btn)
+}
+
+function login(nomeUsuario, senha) {
+
+    
+}
+
+const loginForm = document.getElementById("login")
+loginForm.addEventListener("submit", (e)=>{
+    e.preventDefault()
+
+    siteEmConstrucao()
+
+    const data = new FormData(loginForm)
+    const payload = Object.fromEntries(data.entries())
+
+    //login(payload.nome, payload.senha)
 })

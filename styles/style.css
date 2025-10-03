@@ -15,6 +15,7 @@ body {
     justify-content: center;
     background-color: var(--fundo);
     font-family: system-ui;
+    color: var(--gold-mid);
     height: 100vh;
 }
 
@@ -27,12 +28,6 @@ body {
     justify-content: center;
     padding: 5px;
     align-items: center;
-    color: var(--gold-mid);
-}
-.left-side h1 {
-    display: flex; align-items: center;
-    font-family: 'Copperplate Gothic Bold', sistem-ui;
-    gap: 12px;
 }
 
 nav {
@@ -66,7 +61,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    color: var(--gold-start);
 }
 main p, h3, label {color: var(--gold-mid);}
 
@@ -77,8 +71,7 @@ main p, h3, label {color: var(--gold-mid);}
     background:linear-gradient(0deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
     border:1px solid rgba(212,175,55,0.12);
     padding: 32px;
-    border-radius:12px;
-    color:var(--gold-start);
+    border-radius: 16px;
     width: 90%;
     min-width: 350px;
     max-width: 600px;
@@ -97,12 +90,11 @@ label {
 
 input, select, button {
     border: 1px solid var(--gold-mid);
-    border-radius: 8px;
+    border-radius: 16px;
     height: 40px;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background: transparent;
-
     color: var(--gold-end);
 }
 
@@ -117,17 +109,16 @@ input, select, button {
 .btn {
     margin-top: 12px;
     display:inline-block;
-    border-radius:999px;
     background:linear-gradient(180deg,var(--gold-start),var(--gold-mid));
     color:var(--fundo);
     font-weight:800;
     border:none;
     cursor:pointer;
-    transition:transform .12s ease, box-shadow .12s ease;
+    transition:transform .1s ease;
     width:100%;
     font-size:15px;
 }
-.btn:active{ transform:translateY(1px) }
+.btn:active{ transform:scale(0.98) }
 
 footer {
     align-self: center;
