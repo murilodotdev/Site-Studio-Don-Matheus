@@ -22,17 +22,23 @@ function siteEmConstrucao() {
 
 function login(nomeUsuario, senha) {
 
-    
+    fetch("/requests/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({nomeUsuario, senha})
+    })
+    .then(res => res.json())
+    .then(dados => console.log(dados))
 }
 
 const loginForm = document.getElementById("login")
 loginForm.addEventListener("submit", (e)=>{
     e.preventDefault()
 
-    siteEmConstrucao()
+    // siteEmConstrucao()
 
     const data = new FormData(loginForm)
     const payload = Object.fromEntries(data.entries())
 
-    //login(payload.nome, payload.senha)
+    login(payload.nome, payload.senha)
 })
